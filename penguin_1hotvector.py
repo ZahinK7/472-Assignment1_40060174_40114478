@@ -146,7 +146,7 @@ plt.title('Best Decision Tree (GridSearchCV) for Penguins')
 plt.show()
 
 # Create a Multi-Layered Perceptron
-mlp = MLPClassifier(hidden_layer_sizes=(100, 100), activation='logistic', solver='sgd', max_iter=1000,random_state=42)
+mlp = MLPClassifier(hidden_layer_sizes=(100, 100), activation='logistic', solver='sgd', max_iter=200,random_state=42)
 
 # Fit the MLP to the training data
 mlp.fit(X_train, y_train)
