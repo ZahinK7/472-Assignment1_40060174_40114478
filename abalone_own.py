@@ -57,7 +57,10 @@ print("Confusion Matrix (Decision Tree):")
 print(confusion_matrix_c)
 
 # Compute precision, recall, and F1-measure for each class
-report_c = classification_report(y_test, y_pred_c, target_names=y.unique())
+#Convert class name to string to prevent errors
+class_names_str = y.unique().astype(str)
+report_c = classification_report(y_test, y_pred_c, target_names=class_names_str)
+
 print("Classification Report (Decision Tree):")
 print(report_c)
 
@@ -78,8 +81,7 @@ print("Weighted-Average F1 (Decision Tree):", f1_weighted_c)
 
 ####
 
-# Convert class names to strings
-class_names_str = [str(class_name) for class_name in y.unique()]
+
 
 # Plot the Decision Tree graphically
 plt.figure(figsize=(12, 8))
@@ -122,7 +124,7 @@ print("Confusion Matrix (Top Decision Tree):")
 print(confusion_matrix_dt)
 
 # Compute precision, recall, and F1-measure for each class
-report_dt = classification_report(y_test, y_pred, target_names=y.unique())
+report_dt = classification_report(y_test, y_pred,  target_names=class_names_str)
 print("Classification Report (Top Decision Tree):")
 print(report_dt)
 
@@ -165,7 +167,7 @@ print("Confusion Matrix (Multi-Layer Perceptron):")
 print(confusion_matrix_m)
 
 # Compute precision, recall, and F1-measure for each class
-report_m = classification_report(y_test, y_pred_m, target_names=y.unique())
+report_m = classification_report(y_test, y_pred_m,  target_names=class_names_str)
 print("Classification Report (Multi-Layer Perceptron):")
 print(report_m)
 
@@ -218,7 +220,7 @@ print("Confusion Matrix (Top Multi-Layer Perceptron):")
 print(confusion_matrix_mlp)
 
 # Compute precision, recall, and F1-measure for each class
-report_mlp = classification_report(y_test, y_pred_mlp, target_names=y.unique())
+report_mlp = classification_report(y_test, y_pred_mlp,  target_names=class_names_str)
 print("Classification Report (Top Multi-Layer Perceptron):")
 print(report_mlp)
 
