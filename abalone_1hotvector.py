@@ -49,27 +49,30 @@ clf.fit(X_train, y_train)
 # Evaluate the best model on the test data
 y_pred_c = clf.predict(X_test)
 
+#convert multi-label to binary label because confusion matrix not designed for the prior
+y_test_binary = y_test.idxmax(axis=1)
+y_pred_binary = pd.DataFrame(y_pred_c, columns=['Type_F', 'Type_I', 'Type_M']).idxmax(axis=1)
 ######
 
 # Compute the confusion matrix
-confusion_matrix_c = confusion_matrix(y_test, y_pred_c)
+confusion_matrix_c = confusion_matrix(y_test_binary, y_pred_binary)
 print("Confusion Matrix (Decision Tree):")
 print(confusion_matrix_c)
 
 # Compute precision, recall, and F1-measure for each class
-report_c = classification_report(y_test, y_pred_c, target_names=y.unique())
+report_c = classification_report(y_test_binary, y_pred_binary, target_names=['Type_F', 'Type_I', 'Type_M'])
 print("Classification Report (Decision Tree):")
 print(report_c)
 
 
 # Calculate accuracy
-accuracy_c = accuracy_score(y_test, y_pred_c)
+accuracy_c = accuracy_score(y_test_binary, y_pred_binary)
 
 # Calculate macro-average F1
-f1_macro_c = f1_score(y_test, y_pred_c, average='macro')
+f1_macro_c = f1_score(y_test_binary, y_pred_binary, average='macro')
 
 # Calculate weighted-average F1
-f1_weighted_c = f1_score(y_test, y_pred_c, average='weighted')
+f1_weighted_c = f1_score(y_test_binary, y_pred_binary, average='weighted')
 
 print("Accuracy (Decision Tree):", accuracy_c)
 print("Macro-Average F1 (Decision Tree):", f1_macro_c)
@@ -112,27 +115,32 @@ print("Best Hyperparameters:", grid_search.best_params_)
 # Evaluate the best model on the test data
 y_pred = best_dt.predict(X_test)
 
+
+#convert multi-label to binary label because confusion matrix not designed for the prior
+y_test_binary2 = y_test.idxmax(axis=1)
+y_pred_binary2 = pd.DataFrame(y_pred_c, columns=['Type_F', 'Type_I', 'Type_M']).idxmax(axis=1)
+
 ######
 
 # Compute the confusion matrix
-confusion_matrix_dt = confusion_matrix(y_test, y_pred)
+confusion_matrix_dt = confusion_matrix(y_test_binary2, y_pred_binary2)
 print("Confusion Matrix (Top Decision Tree):")
 print(confusion_matrix_dt)
 
 # Compute precision, recall, and F1-measure for each class
-report_dt = classification_report(y_test, y_pred, target_names=y.unique())
+report_dt = classification_report(y_test_binary2, y_pred_binary2, target_names=['Type_F', 'Type_I', 'Type_M'])
 print("Classification Report (Top Decision Tree):")
 print(report_dt)
 
 
 # Calculate accuracy
-accuracy_dt = accuracy_score(y_test, y_pred)
+accuracy_dt = accuracy_score(y_test_binary2, y_pred_binary2)
 
 # Calculate macro-average F1
-f1_macro_dt = f1_score(y_test, y_pred, average='macro')
+f1_macro_dt = f1_score(y_test_binary2, y_pred_binary2, average='macro')
 
 # Calculate weighted-average F1
-f1_weighted_dt = f1_score(y_test, y_pred, average='weighted')
+f1_weighted_dt = f1_score(y_test_binary2, y_pred_binary2, average='weighted')
 
 print("Accuracy (Top Decision Tree):", accuracy_dt)
 print("Macro-Average F1 (Top Decision Tree):", f1_macro_dt)
@@ -156,26 +164,30 @@ mlp.fit(X_train, y_train)
 
 y_pred_m = mlp.predict(X_test)
 
+#convert multi-label to binary label because confusion matrix not designed for the prior
+y_test_binary3 = y_test.idxmax(axis=1)
+y_pred_binary3 = pd.DataFrame(y_pred_c, columns=['Type_F', 'Type_I', 'Type_M']).idxmax(axis=1)
+
 ##########
 # Compute the confusion matrix
-confusion_matrix_m = confusion_matrix(y_test, y_pred_m)
+confusion_matrix_m = confusion_matrix(y_test_binary3, y_pred_binary3)
 print("Confusion Matrix (Multi-Layer Perceptron):")
 print(confusion_matrix_m)
 
 # Compute precision, recall, and F1-measure for each class
-report_m = classification_report(y_test, y_pred_m, target_names=y.unique())
+report_m = classification_report(y_test_binary3, y_pred_binary3, target_names=['Type_F', 'Type_I', 'Type_M'])
 print("Classification Report (Multi-Layer Perceptron):")
 print(report_m)
 
 
 # Calculate accuracy
-accuracy_m = accuracy_score(y_test, y_pred_m)
+accuracy_m = accuracy_score(y_test_binary3, y_pred_binary3)
 
 # Calculate macro-average F1
-f1_macro_m = f1_score(y_test, y_pred_m, average='macro')
+f1_macro_m = f1_score(y_test_binary3, y_pred_binary3, average='macro')
 
 # Calculate weighted-average F1
-f1_weighted_m = f1_score(y_test, y_pred_m, average='weighted')
+f1_weighted_m = f1_score(y_test_binary3, y_pred_binary3, average='weighted')
 
 print("Accuracy (Multi-Layer Perceptron):", accuracy_m)
 print("Macro-Average F1 (Multi-Layer Perceptron):", f1_macro_m)
@@ -209,26 +221,30 @@ best_mlp = grid_search.best_estimator_
 # Use the trained model to make predictions on the test data
 y_pred_mlp = best_mlp.predict(X_test)
 
+#convert multi-label to binary label because confusion matrix not designed for the prior
+y_test_binary4 = y_test.idxmax(axis=1)
+y_pred_binary4 = pd.DataFrame(y_pred_c, columns=['Type_F', 'Type_I', 'Type_M']).idxmax(axis=1)
+
 #####
 
 # Compute the confusion matrix
-confusion_matrix_mlp = confusion_matrix(y_test, y_pred_mlp)
+confusion_matrix_mlp = confusion_matrix(y_test_binary4, y_pred_binary4)
 print("Confusion Matrix (Top Multi-Layer Perceptron):")
 print(confusion_matrix_mlp)
 
 # Compute precision, recall, and F1-measure for each class
-report_mlp = classification_report(y_test, y_pred_mlp, target_names=y.unique())
+report_mlp = classification_report(y_test_binary4, y_pred_binary4, target_names=['Type_F', 'Type_I', 'Type_M'])
 print("Classification Report (Top Multi-Layer Perceptron):")
 print(report_mlp)
 
 # Calculate accuracy
-accuracy_mlp = accuracy_score(y_test, y_pred_mlp)
+accuracy_mlp = accuracy_score(y_test_binary4, y_pred_binary4)
 
 # Calculate macro-average F1
-f1_macro_mlp = f1_score(y_test, y_pred_mlp, average='macro')
+f1_macro_mlp = f1_score(y_test_binary4, y_pred_binary4, average='macro')
 
 # Calculate weighted-average F1
-f1_weighted_mlp = f1_score(y_test, y_pred_mlp, average='weighted')
+f1_weighted_mlp = f1_score(y_test_binary4, y_pred_binary4, average='weighted')
 
 print("Accuracy (Top Multi-Layer Perceptron):", accuracy_mlp)
 print("Macro-Average F1 (Top Multi-Layer Perceptron):", f1_macro_mlp)
