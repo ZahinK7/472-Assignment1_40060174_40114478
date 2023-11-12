@@ -37,7 +37,7 @@ plt.title('Percentage of Instances in Each Sex')
 plt.xticks(rotation=0)  # Assuming you don't need rotation for just three categories
 
 # Save the plot to a file 
-plt.savefig("abalone-sex.png")
+plt.savefig("abalone-classes2.png")
 
 # Display the plot (optional)
 plt.show()
