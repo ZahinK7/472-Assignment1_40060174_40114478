@@ -15,6 +15,8 @@ abalone = pd.read_csv("abalone.csv")
 abalone = pd.get_dummies(abalone, columns=['Type'])
 print(abalone.head())
 
+print("This is for 1-hot vector for abalone")
+
 # Calculate the percentage of instances in each output class (sex)
 class_counts = abalone[['Type_F', 'Type_I', 'Type_M']].sum()
 class_percentages = (class_counts / len(abalone)) * 100
@@ -53,7 +55,7 @@ y_pred_c = clf.predict(X_test)
 y_test_binary = y_test.idxmax(axis=1)
 y_pred_binary = pd.DataFrame(y_pred_c, columns=['Type_F', 'Type_I', 'Type_M']).idxmax(axis=1)
 ######
-
+print("------------------------------------------------------")
 # Compute the confusion matrix
 confusion_matrix_c = confusion_matrix(y_test_binary, y_pred_binary)
 print("Confusion Matrix (Decision Tree):")
@@ -78,6 +80,19 @@ print("Accuracy (Decision Tree):", accuracy_c)
 print("Macro-Average F1 (Decision Tree):", f1_macro_c)
 print("Weighted-Average F1 (Decision Tree):", f1_weighted_c)
 
+with open("abalone-performance.txt", "a") as file:
+    file.write("This is for 1-hot vector for abalone\n")
+    file.write("------------------------------------------------------\n")
+    file.write("(A)")
+    file.write("Confusion Matrix (Decision Tree):\n")
+    file.write(str(confusion_matrix_c) + "\n")
+    file.write("Classification Report (Decision Tree):\n")
+    file.write(report_c + "\n")
+
+    file.write(f"Accuracy (Decision Tree): {accuracy_c:.4f}\n")
+    file.write(f"Macro-Average F1 (Decision Tree): {f1_macro_c:.4f}\n")
+    file.write(f"Weighted-Average F1 (Decision Tree): {f1_weighted_c:.4f}\n")
+    file.write("------------------------------------------------------\n")
 
 ####
 
@@ -106,11 +121,14 @@ grid_search.fit(X_train, y_train)
 
 # Get the best Decision Tree model
 best_dt = grid_search.best_estimator_
+print("------------------------------------------------------")
+# Print the best hyperparameters
+print("Best Hyperparameters for Top decision tree:", grid_search.best_params_)
+
 
 best_dt.set_params(max_depth=3)
 
-# Print the best hyperparameters
-print("Best Hyperparameters:", grid_search.best_params_)
+
 
 # Evaluate the best model on the test data
 y_pred = best_dt.predict(X_test)
@@ -146,6 +164,19 @@ print("Accuracy (Top Decision Tree):", accuracy_dt)
 print("Macro-Average F1 (Top Decision Tree):", f1_macro_dt)
 print("Weighted-Average F1 (Top Decision Tree):", f1_weighted_dt)
 
+with open("abalone-performance.txt", "a") as file:
+    file.write("------------------------------------------------------\n")
+    file.write("(B)")
+    file.write("Confusion Matrix (Top Decision Tree):\n")
+    file.write(str(confusion_matrix_dt) + "\n")
+    file.write("Classification Report (Top Decision Tree):\n")
+    file.write(report_dt + "\n")
+    file.write(f"Accuracy (Top Decision Tree): {accuracy_dt:.4f}\n")
+    file.write(f"Macro-Average F1 (Top Decision Tree): {f1_macro_dt:.4f}\n")
+    file.write(f"Weighted-Average F1 (Top Decision Tree): {f1_weighted_dt:.4f}\n")
+    file.write("\nBest Hyperparameters (Top Decision Tree):\n")
+    file.write(str(grid_search.best_params_) + "\n")
+    file.write("------------------------------------------------------\n")
 
 ####
 
@@ -163,6 +194,8 @@ mlp = MLPClassifier(hidden_layer_sizes=(100, 100), activation='logistic', solver
 mlp.fit(X_train, y_train)
 
 y_pred_m = mlp.predict(X_test)
+
+print("------------------------------------------------------")
 
 #convert multi-label to binary label because confusion matrix not designed for the prior
 y_test_binary3 = y_test.idxmax(axis=1)
@@ -193,10 +226,25 @@ print("Accuracy (Multi-Layer Perceptron):", accuracy_m)
 print("Macro-Average F1 (Multi-Layer Perceptron):", f1_macro_m)
 print("Weighted-Average F1 (Multi-Layer Perceptron):", f1_weighted_m)
 
+
+with open("abalone-performance.txt", "a") as file:
+    file.write("------------------------------------------------------\n")
+    file.write("(C)")
+    file.write("Confusion Matrix (Multi-Layer Perceptron):\n")
+    file.write(str(confusion_matrix_m) + "\n")
+    file.write("Classification Report (Multi-Layer Perceptron):\n")
+    file.write(report_m + "\n")
+    file.write(f"Accuracy (Multi-Layer Perceptron): {accuracy_m:.4f}\n")
+    file.write(f"Macro-Average F1 (Multi-Layer Perceptron): {f1_macro_m:.4f}\n")
+    file.write(f"Weighted-Average F1 (Multi-Layer Perceptron): {f1_weighted_m:.4f}\n")
+    file.write("------------------------------------------------------\n")
+
+
 # Evaluate the MLP on the test data
 accuracy = mlp.score(X_test, y_test)
 print("Test Accuracy:", accuracy)
 
+print("------------------------------------------------------")
 
 # Define the parameter grid for GridSearchCV
 param_grid = {
@@ -250,11 +298,31 @@ print("Accuracy (Top Multi-Layer Perceptron):", accuracy_mlp)
 print("Macro-Average F1 (Top Multi-Layer Perceptron):", f1_macro_mlp)
 print("Weighted-Average F1 (Top Multi-Layer Perceptron):", f1_weighted_mlp)
 
+print("Best Hyperparameters (Top Multi-Layer Perceptron) :", grid_search.best_params_)
+
+with open("abalone-performance.txt", "a") as file:
+    file.write("------------------------------------------------------\n")
+    file.write("(D)")
+    file.write("Confusion Matrix (Top Multi-Layer Perceptron):\n")
+    file.write(str(confusion_matrix_mlp) + "\n")
+    file.write("Classification Report (Top Multi-Layer Perceptron):\n")
+    file.write(report_mlp + "\n")
+    file.write(f"Accuracy (Top Multi-Layer Perceptron): {accuracy_mlp:.4f}\n")
+    file.write(f"Macro-Average F1 (Top Multi-Layer Perceptron): {f1_macro_mlp:.4f}\n")
+    file.write(f"Weighted-Average F1 (Top Multi-Layer Perceptron): {f1_weighted_mlp:.4f}\n")
+    file.write(f"Weighted-Average F1 (Top Multi-Layer Perceptron): {f1_weighted_mlp:.4f}\n")
+    file.write("\nBest Hyperparameters (Top Multi-Layer Perceptron):\n")
+    file.write(str(grid_search.best_params_) + "\n")
+    file.write("------------------------------------------------------\n")
+
+
+
 ##############
 
-# Print the best hyperparameters
-print("Best Hyperparameters:", grid_search.best_params_)
+
 
 # Evaluate the best model on the test data
 accuracy = best_mlp.score(X_test, y_test)
 print("Test Accuracy:", accuracy)
+
+print("------------------------------------------------------")
