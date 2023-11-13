@@ -86,8 +86,12 @@ for _ in range(num_runs):
     print("Accuracy (Decision Tree):", accuracy_c)
     print("Macro-Average F1 (Decision Tree):", f1_macro_c)
     print("Weighted-Average F1 (Decision Tree):", f1_weighted_c)
-    print("Precision (Decision Tree):", precision_c)
-    print("Recall(Decision Tree):", recall_c)
+    print("Precision (Decision Tree):")
+    for i, precision in enumerate(precision_c):
+        print(f"Class {i}: {precision:.4f}")
+    print("Recall (Decision Tree):")
+    for i, recall in enumerate(recall_c):
+        print(f"Class {i}: {recall:.4f}")
 
     list_accuracy.append(accuracy_c)
     list_f1macro.append(f1_macro_c)
@@ -105,8 +109,12 @@ for _ in range(num_runs):
         file.write(f"Accuracy (Decision Tree): {accuracy_c:.4f}\n")
         file.write(f"Macro-Average F1 (Decision Tree): {f1_macro_c:.4f}\n")
         file.write(f"Weighted-Average F1 (Decision Tree): {f1_weighted_c:.4f}\n")
-        file.write(f"Precision (Decision Tree): {precision_c:.4f}\n")
-        file.write(f"Recall (Decision Tree): {recall_c:.4f}\n")
+        file.write(f"Precision (Decision Tree): \n")
+        for i, precision in enumerate(precision_c):
+            file.write(f"Class {i}: {precision:.4f}\n")
+        file.write("Recall (Decision Tree):\n")
+        for i, recall in enumerate(recall_c):
+            file.write(f"Class {i}: {recall:.4f}\n")
         file.write("------------------------------------------------------\n")
 
 ####
@@ -178,8 +186,12 @@ for _ in range(num_runs):
     print("Accuracy (Top Decision Tree):", accuracy_dt)
     print("Macro-Average F1 (Top Decision Tree):", f1_macro_dt)
     print("Weighted-Average F1 (Top Decision Tree):", f1_weighted_dt)
-    print("Precision (Top Decision Tree):", precision_dt)
-    print("Recall(Top Decision Tree):", recall_dt)
+    print("Precision (Top Decision Tree):")
+    for i, precision in enumerate(precision_dt):
+        print(f"Class {i}: {precision:.4f}")
+    print("Recall(Top Decision Tree):")
+    for i, recall in enumerate(recall_dt):
+        print(f"Class {i}: {recall:.4f}")
     
     list_accuracy.append(accuracy_dt)
     list_f1macro.append(f1_macro_dt)
@@ -196,8 +208,12 @@ for _ in range(num_runs):
         file.write(f"Weighted-Average F1 (Top Decision Tree): {f1_weighted_dt:.4f}\n")
         file.write("\nBest Hyperparameters (Top Decision Tree):\n")
         file.write(str(grid_search.best_params_) + "\n")
-        file.write(f"Precision (Top Decision Tree): {precision_dt:.4f}\n")
-        file.write(f"Recall (Top Decision Tree): {recall_dt:.4f}\n")
+        file.write(f"Precision (Top Decision Tree): \n")
+        for i, precision in enumerate(precision_dt):
+            file.write(f"Class {i}: {precision:.4f}\n")
+        file.write(f"Recall (Top Decision Tree): \n")
+        for i, recall in enumerate(recall_dt):
+            file.write(f"Class {i}: {recall:.4f}\n")
         file.write("------------------------------------------------------\n")
 
 ####
@@ -249,8 +265,9 @@ for _ in range(num_runs):
     print("Accuracy (Multi-Layer Perceptron):", accuracy_m)
     print("Macro-Average F1 (Multi-Layer Perceptron):", f1_macro_m)
     print("Weighted-Average F1 (Multi-Layer Perceptron):", f1_weighted_m)
-    print("Precision (Multi-Layer Perceptron):", precision_m)
-    print("Recall(Multi-Layer Perceptron):", recall_m)
+    print("Precision (Multi-Layer Perceptron):")
+    for i, precision in enumerate(precision_m):
+        print(f"Class {i}: {precision:.4f}")
 
     list_accuracy.append(accuracy_m)
     list_f1macro.append(f1_macro_m)
@@ -265,8 +282,12 @@ for _ in range(num_runs):
         file.write(f"Accuracy (Multi-Layer Perceptron): {accuracy_m:.4f}\n")
         file.write(f"Macro-Average F1 (Multi-Layer Perceptron): {f1_macro_m:.4f}\n")
         file.write(f"Weighted-Average F1 (Multi-Layer Perceptron): {f1_weighted_m:.4f}\n")
-        file.write(f"Precision (Multi-Layer Perceptron): {precision_m:.4f}\n")
-        file.write(f"Recall (Multi-Layer Perceptron): {recall_m:.4f}\n")
+        file.write(f"Precision (Multi-Layer Perceptron): \n")
+        for i, precision in enumerate(precision_m):
+            file.write(f"Class {i}: {precision:.4f}\n")
+        file.write(f"Recall (Multi-Layer Perceptron): \n")
+        for i,recall in enumerate(recall_m):
+            print(f"Class {i}: {recall:.4f}")
         file.write("------------------------------------------------------\n")
 
 
@@ -330,9 +351,12 @@ for _ in range(num_runs):
     print("Accuracy (Top Multi-Layer Perceptron):", accuracy_mlp)
     print("Macro-Average F1 (Top Multi-Layer Perceptron):", f1_macro_mlp)
     print("Weighted-Average F1 (Top Multi-Layer Perceptron):", f1_weighted_mlp)
-    print("Precision (Multi-Layer Perceptron):", precision_mlp)
-    print("Recall(Multi-Layer Perceptron):", recall_mlp)
-
+    print("Precision (Top Multi-Layer Perceptron):")
+    for i, precision in enumerate(precision_mlp):
+        print(f"Class {i}: {precision:.4f}")
+    print("Recall(Top Multi-Layer Perceptron):")
+    for i, recall in enumerate(recall_mlp):
+        print(f"Class {i}: {recall:.4f}")
     print("Best Hyperparameters (Top Multi-Layer Perceptron) :", grid_search.best_params_)
     
     list_accuracy.append(accuracy_mlp)
@@ -350,8 +374,12 @@ for _ in range(num_runs):
         file.write(f"Weighted-Average F1 (Top Multi-Layer Perceptron): {f1_weighted_mlp:.4f}\n")
         file.write(f"Weighted-Average F1 (Top Multi-Layer Perceptron): {f1_weighted_mlp:.4f}\n")
         file.write("\nBest Hyperparameters (Top Multi-Layer Perceptron):\n")
-        file.write(f"Precision (Multi-Layer Perceptron): {precision_mlp:.4f}\n")
-        file.write(f"Recall (Multi-Layer Perceptron): {recall_mlp:.4f}\n")
+        file.write(f"Precision (Top Multi-Layer Perceptron): \n")
+        for i, precision in enumerate(precision_mlp):
+            file.write(f"Class {i}: {precision:.4f}\n")
+        file.write(f"Recall (Multi-Layer Perceptron): \n")
+        for i, recall in enumerate(recall_mlp):
+            print(f"Class {i}: {recall:.4f}")
         file.write(str(grid_search.best_params_) + "\n")
         file.write("------------------------------------------------------\n")
 
