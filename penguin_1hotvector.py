@@ -8,7 +8,7 @@ from sklearn.tree import plot_tree
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
-from sklearn.metrics import accuracy_score, f1_score
+from sklearn.metrics import accuracy_score, f1_score,precision_score,recall_score
 import numpy as np
 
 # Loading the dataset
@@ -85,9 +85,14 @@ for _ in range(num_runs):
     # Calculating weighted-average F1
     f1_weighted_c = f1_score(y_test, y_pred_c, average='weighted')
 
+    precision_c= precision_score(y_test, y_pred_c, average=None)
+    recall_c =recall_score(y_test, y_pred_c, average=None)
+
     print("Accuracy (Decision Tree):", accuracy_c)
     print("Macro-Average F1 (Decision Tree):", f1_macro_c)
     print("Weighted-Average F1 (Decision Tree):", f1_weighted_c)
+    print("Precision (Decision Tree):", precision_c)
+    print("Recall(Decision Tree):", recall_c)
 
     list_accuracy.append(accuracy_c)
     list_f1macro.append(f1_macro_c)
@@ -106,6 +111,8 @@ for _ in range(num_runs):
         file.write(f"Accuracy (Decision Tree): {accuracy_c:.4f}\n")
         file.write(f"Macro-Average F1 (Decision Tree): {f1_macro_c:.4f}\n")
         file.write(f"Weighted-Average F1 (Decision Tree): {f1_weighted_c:.4f}\n")
+        file.write(f"Precision (Decision Tree): {precision_c:.4f}\n")
+        file.write(f"Recall (Decision Tree): {recall_c:.4f}\n")
         file.write("------------------------------------------------------\n")
 
 ####
@@ -129,7 +136,7 @@ for _ in range(num_runs):
     dt_classifier = DecisionTreeClassifier(random_state=None)
 
     # Creating a GridSearchCV 
-    grid_search = GridSearchCV(estimator=dt_classifier, param_grid=param_grid, scoring='accuracy', cv=5)
+    grid_search = GridSearchCV(estimator=dt_classifier, param_grid=param_grid)
 
     # Fitting the grid search to the training data
     grid_search.fit(X_train, y_train)
@@ -165,9 +172,14 @@ for _ in range(num_runs):
     # Calculating weighted-average F1
     f1_weighted_dt = f1_score(y_test, y_pred, average='weighted')
 
+    precision_dt= precision_score(y_test, y_pred,average=None)
+    recall_dt =recall_score(y_test, y_pred, average=None)
+
     print("Accuracy (Top Decision Tree):", accuracy_dt)
     print("Macro-Average F1 (Top Decision Tree):", f1_macro_dt)
     print("Weighted-Average F1 (Top Decision Tree):", f1_weighted_dt)
+    print("Precision (Top Decision Tree):", precision_dt)
+    print("Recall(Top Decision Tree):", recall_dt)
 
     list_accuracy.append(accuracy_dt)
     list_f1macro.append(f1_macro_dt)
@@ -186,6 +198,8 @@ for _ in range(num_runs):
         file.write(f"Weighted-Average F1 (Top Decision Tree): {f1_weighted_dt:.4f}\n")
         file.write("\nBest Hyperparameters (Top Decision Tree):\n")
         file.write(str(grid_search.best_params_) + "\n")
+        file.write(f"Precision (Top Decision Tree): {precision_dt:.4f}\n")
+        file.write(f"Recall (Top Decision Tree): {recall_dt:.4f}\n")
         file.write("------------------------------------------------------\n")
 
 
@@ -228,10 +242,14 @@ for _ in range(num_runs):
 
     # Calculating weighted-average F1
     f1_weighted_m = f1_score(y_test, y_pred_m, average='weighted')
+    precision_m= precision_score(y_test, y_pred,average=None)
+    recall_m =recall_score(y_test, y_pred, average=None)
 
     print("Accuracy (Multi-Layer Perceptron):", accuracy_m)
     print("Macro-Average F1 (Multi-Layer Perceptron):", f1_macro_m)
     print("Weighted-Average F1 (Multi-Layer Perceptron):", f1_weighted_m)
+    print("Precision (Multi-Layer Perceptron):", precision_m)
+    print("Recall(Multi-Layer Perceptron):", recall_m)
 
     list_accuracy.append(accuracy_m)
     list_f1macro.append(f1_macro_m)
@@ -247,6 +265,8 @@ for _ in range(num_runs):
         file.write(f"Accuracy (Multi-Layer Perceptron): {accuracy_m:.4f}\n")
         file.write(f"Macro-Average F1 (Multi-Layer Perceptron): {f1_macro_m:.4f}\n")
         file.write(f"Weighted-Average F1 (Multi-Layer Perceptron): {f1_weighted_m:.4f}\n")
+        file.write(f"Precision (Multi-Layer Perceptron): {precision_m:.4f}\n")
+        file.write(f"Recall (Multi-Layer Perceptron): {recall_m:.4f}\n")
         file.write("------------------------------------------------------\n")
 
 
@@ -301,10 +321,14 @@ for _ in range(num_runs):
 
     # Calculating weighted-average F1
     f1_weighted_mlp = f1_score(y_test, y_pred_mlp, average='weighted')
+    precision_mlp= precision_score(y_test, y_pred,average=None)
+    recall_mlp =recall_score(y_test, y_pred, average=None)
 
     print("Accuracy (Top Multi-Layer Perceptron):", accuracy_mlp)
     print("Macro-Average F1 (Top Multi-Layer Perceptron):", f1_macro_mlp)
     print("Weighted-Average F1 (Top Multi-Layer Perceptron):", f1_weighted_mlp)
+    print("Precision (Multi-Layer Perceptron):", precision_mlp)
+    print("Recall(Multi-Layer Perceptron):", recall_mlp)
 
     list_accuracy.append(accuracy_mlp)
     list_f1macro.append(f1_macro_mlp)
@@ -324,6 +348,8 @@ for _ in range(num_runs):
         file.write(f"Weighted-Average F1 (Top Multi-Layer Perceptron): {f1_weighted_mlp:.4f}\n")
         file.write(f"Weighted-Average F1 (Top Multi-Layer Perceptron): {f1_weighted_mlp:.4f}\n")
         file.write("\nBest Hyperparameters (Top Multi-Layer Perceptron):\n")
+        file.write(f"Precision (Multi-Layer Perceptron): {precision_mlp:.4f}\n")
+        file.write(f"Recall (Multi-Layer Perceptron): {recall_mlp:.4f}\n")
         file.write(str(grid_search.best_params_) + "\n")
         file.write("------------------------------------------------------\n")
 
