@@ -1,445 +1,1150 @@
 This is for 1-hot vector for abalone
 ------------------------------------------------------
 (A)Confusion Matrix (Decision Tree):
-[[217  25  25]
- [ 89 179   1]
- [249  30  21]]
+[[1 1 0]
+ [0 2 1]
+ [1 0 4]]
 Classification Report (Decision Tree):
               precision    recall  f1-score   support
 
-      Type_F       0.39      0.81      0.53       267
-      Type_I       0.76      0.67      0.71       269
-      Type_M       0.45      0.07      0.12       300
+      Type_F       0.50      0.50      0.50         2
+      Type_I       0.67      0.67      0.67         3
+      Type_M       0.80      0.80      0.80         5
 
-    accuracy                           0.50       836
-   macro avg       0.53      0.52      0.45       836
-weighted avg       0.53      0.50      0.44       836
+    accuracy                           0.70        10
+   macro avg       0.66      0.66      0.66        10
+weighted avg       0.70      0.70      0.70        10
 
-Accuracy (Decision Tree): 0.4988
-Macro-Average F1 (Decision Tree): 0.4536
-Weighted-Average F1 (Decision Tree): 0.4411
+Accuracy (Decision Tree): 0.7000
+Macro-Average F1 (Decision Tree): 0.6556
+Weighted-Average F1 (Decision Tree): 0.7000
+Precision (Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.8000
+Recall (Decision Tree):
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.8000
 ------------------------------------------------------
 This is for 1-hot vector for abalone
 ------------------------------------------------------
 (A)Confusion Matrix (Decision Tree):
-[[217  25  25]
- [ 89 179   1]
- [249  30  21]]
+[[1 1 0]
+ [0 2 1]
+ [1 0 4]]
 Classification Report (Decision Tree):
               precision    recall  f1-score   support
 
-      Type_F       0.39      0.81      0.53       267
-      Type_I       0.76      0.67      0.71       269
-      Type_M       0.45      0.07      0.12       300
+      Type_F       0.50      0.50      0.50         2
+      Type_I       0.67      0.67      0.67         3
+      Type_M       0.80      0.80      0.80         5
 
-    accuracy                           0.50       836
-   macro avg       0.53      0.52      0.45       836
-weighted avg       0.53      0.50      0.44       836
+    accuracy                           0.70        10
+   macro avg       0.66      0.66      0.66        10
+weighted avg       0.70      0.70      0.70        10
 
-Accuracy (Decision Tree): 0.4988
-Macro-Average F1 (Decision Tree): 0.4536
-Weighted-Average F1 (Decision Tree): 0.4411
+Accuracy (Decision Tree): 0.7000
+Macro-Average F1 (Decision Tree): 0.6556
+Weighted-Average F1 (Decision Tree): 0.7000
+Precision (Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.8000
+Recall (Decision Tree):
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.8000
 ------------------------------------------------------
 This is for 1-hot vector for abalone
 ------------------------------------------------------
 (A)Confusion Matrix (Decision Tree):
-[[217  25  25]
- [ 89 179   1]
- [249  30  21]]
+[[1 1 0]
+ [0 2 1]
+ [1 0 4]]
 Classification Report (Decision Tree):
               precision    recall  f1-score   support
 
-      Type_F       0.39      0.81      0.53       267
-      Type_I       0.76      0.67      0.71       269
-      Type_M       0.45      0.07      0.12       300
+      Type_F       0.50      0.50      0.50         2
+      Type_I       0.67      0.67      0.67         3
+      Type_M       0.80      0.80      0.80         5
 
-    accuracy                           0.50       836
-   macro avg       0.53      0.52      0.45       836
-weighted avg       0.53      0.50      0.44       836
+    accuracy                           0.70        10
+   macro avg       0.66      0.66      0.66        10
+weighted avg       0.70      0.70      0.70        10
 
-Accuracy (Decision Tree): 0.4988
-Macro-Average F1 (Decision Tree): 0.4536
-Weighted-Average F1 (Decision Tree): 0.4411
+Accuracy (Decision Tree): 0.7000
+Macro-Average F1 (Decision Tree): 0.6556
+Weighted-Average F1 (Decision Tree): 0.7000
+Precision (Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.8000
+Recall (Decision Tree):
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.8000
 ------------------------------------------------------
 This is for 1-hot vector for abalone
 ------------------------------------------------------
 (A)Confusion Matrix (Decision Tree):
-[[217  25  25]
- [ 89 179   1]
- [249  30  21]]
+[[1 1 0]
+ [0 2 1]
+ [1 0 4]]
 Classification Report (Decision Tree):
               precision    recall  f1-score   support
 
-      Type_F       0.39      0.81      0.53       267
-      Type_I       0.76      0.67      0.71       269
-      Type_M       0.45      0.07      0.12       300
+      Type_F       0.50      0.50      0.50         2
+      Type_I       0.67      0.67      0.67         3
+      Type_M       0.80      0.80      0.80         5
 
-    accuracy                           0.50       836
-   macro avg       0.53      0.52      0.45       836
-weighted avg       0.53      0.50      0.44       836
+    accuracy                           0.70        10
+   macro avg       0.66      0.66      0.66        10
+weighted avg       0.70      0.70      0.70        10
 
-Accuracy (Decision Tree): 0.4988
-Macro-Average F1 (Decision Tree): 0.4536
-Weighted-Average F1 (Decision Tree): 0.4411
+Accuracy (Decision Tree): 0.7000
+Macro-Average F1 (Decision Tree): 0.6556
+Weighted-Average F1 (Decision Tree): 0.7000
+Precision (Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.8000
+Recall (Decision Tree):
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.8000
 ------------------------------------------------------
 This is for 1-hot vector for abalone
 ------------------------------------------------------
 (A)Confusion Matrix (Decision Tree):
-[[217  25  25]
- [ 89 179   1]
- [249  30  21]]
+[[1 1 0]
+ [0 2 1]
+ [1 0 4]]
 Classification Report (Decision Tree):
               precision    recall  f1-score   support
 
-      Type_F       0.39      0.81      0.53       267
-      Type_I       0.76      0.67      0.71       269
-      Type_M       0.45      0.07      0.12       300
+      Type_F       0.50      0.50      0.50         2
+      Type_I       0.67      0.67      0.67         3
+      Type_M       0.80      0.80      0.80         5
 
-    accuracy                           0.50       836
-   macro avg       0.53      0.52      0.45       836
-weighted avg       0.53      0.50      0.44       836
+    accuracy                           0.70        10
+   macro avg       0.66      0.66      0.66        10
+weighted avg       0.70      0.70      0.70        10
 
-Accuracy (Decision Tree): 0.4988
-Macro-Average F1 (Decision Tree): 0.4536
-Weighted-Average F1 (Decision Tree): 0.4411
+Accuracy (Decision Tree): 0.7000
+Macro-Average F1 (Decision Tree): 0.6556
+Weighted-Average F1 (Decision Tree): 0.7000
+Precision (Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.8000
+Recall (Decision Tree):
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.8000
 ------------------------------------------------------
 ------------------------------------------------------
 (B)Confusion Matrix (Top Decision Tree):
-[[102  40 125]
- [ 37 173  59]
- [124  49 127]]
+[[1 1 0]
+ [0 3 0]
+ [3 0 2]]
 Classification Report (Top Decision Tree):
               precision    recall  f1-score   support
 
-      Type_F       0.39      0.38      0.38       267
-      Type_I       0.66      0.64      0.65       269
-      Type_M       0.41      0.42      0.42       300
+      Type_F       0.25      0.50      0.33         2
+      Type_I       0.75      1.00      0.86         3
+      Type_M       1.00      0.40      0.57         5
 
-    accuracy                           0.48       836
-   macro avg       0.49      0.48      0.48       836
-weighted avg       0.48      0.48      0.48       836
+    accuracy                           0.60        10
+   macro avg       0.67      0.63      0.59        10
+weighted avg       0.78      0.60      0.61        10
 
-Accuracy (Top Decision Tree): 0.4809
-Macro-Average F1 (Top Decision Tree): 0.4841
-Weighted-Average F1 (Top Decision Tree): 0.4818
+Accuracy (Top Decision Tree): 0.6000
+Macro-Average F1 (Top Decision Tree): 0.5873
+Weighted-Average F1 (Top Decision Tree): 0.6095
 
 Best Hyperparameters (Top Decision Tree):
-{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 10}
+Precision (Top Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.7500
+Class 2: 1.0000
+Recall (Top Decision Tree): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.4000
 ------------------------------------------------------
 ------------------------------------------------------
 (B)Confusion Matrix (Top Decision Tree):
-[[106  42 119]
- [ 41 168  60]
- [126  48 126]]
+[[1 1 0]
+ [0 3 0]
+ [3 0 2]]
 Classification Report (Top Decision Tree):
               precision    recall  f1-score   support
 
-      Type_F       0.39      0.40      0.39       267
-      Type_I       0.65      0.62      0.64       269
-      Type_M       0.41      0.42      0.42       300
+      Type_F       0.25      0.50      0.33         2
+      Type_I       0.75      1.00      0.86         3
+      Type_M       1.00      0.40      0.57         5
 
-    accuracy                           0.48       836
-   macro avg       0.48      0.48      0.48       836
-weighted avg       0.48      0.48      0.48       836
+    accuracy                           0.60        10
+   macro avg       0.67      0.63      0.59        10
+weighted avg       0.78      0.60      0.61        10
 
-Accuracy (Top Decision Tree): 0.4785
-Macro-Average F1 (Top Decision Tree): 0.4822
-Weighted-Average F1 (Top Decision Tree): 0.4800
+Accuracy (Top Decision Tree): 0.6000
+Macro-Average F1 (Top Decision Tree): 0.5873
+Weighted-Average F1 (Top Decision Tree): 0.6095
 
 Best Hyperparameters (Top Decision Tree):
-{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 10}
+Precision (Top Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.7500
+Class 2: 1.0000
+Recall (Top Decision Tree): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.4000
 ------------------------------------------------------
 ------------------------------------------------------
 (B)Confusion Matrix (Top Decision Tree):
-[[104  36 127]
- [ 48 168  53]
- [121  53 126]]
+[[1 1 0]
+ [0 2 1]
+ [2 0 3]]
 Classification Report (Top Decision Tree):
               precision    recall  f1-score   support
 
-      Type_F       0.38      0.39      0.39       267
-      Type_I       0.65      0.62      0.64       269
-      Type_M       0.41      0.42      0.42       300
+      Type_F       0.33      0.50      0.40         2
+      Type_I       0.67      0.67      0.67         3
+      Type_M       0.75      0.60      0.67         5
 
-    accuracy                           0.48       836
-   macro avg       0.48      0.48      0.48       836
-weighted avg       0.48      0.48      0.48       836
+    accuracy                           0.60        10
+   macro avg       0.58      0.59      0.58        10
+weighted avg       0.64      0.60      0.61        10
 
-Accuracy (Top Decision Tree): 0.4761
-Macro-Average F1 (Top Decision Tree): 0.4799
-Weighted-Average F1 (Top Decision Tree): 0.4778
+Accuracy (Top Decision Tree): 0.6000
+Macro-Average F1 (Top Decision Tree): 0.5778
+Weighted-Average F1 (Top Decision Tree): 0.6133
 
 Best Hyperparameters (Top Decision Tree):
-{'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 2}
+{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 10}
+Precision (Top Decision Tree): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Top Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.6000
 ------------------------------------------------------
 ------------------------------------------------------
 (B)Confusion Matrix (Top Decision Tree):
-[[106  31 130]
- [ 39 174  56]
- [117  53 130]]
+[[1 1 0]
+ [0 2 1]
+ [2 0 3]]
 Classification Report (Top Decision Tree):
               precision    recall  f1-score   support
 
-      Type_F       0.40      0.40      0.40       267
-      Type_I       0.67      0.65      0.66       269
-      Type_M       0.41      0.43      0.42       300
+      Type_F       0.33      0.50      0.40         2
+      Type_I       0.67      0.67      0.67         3
+      Type_M       0.75      0.60      0.67         5
 
-    accuracy                           0.49       836
-   macro avg       0.50      0.49      0.49       836
-weighted avg       0.49      0.49      0.49       836
+    accuracy                           0.60        10
+   macro avg       0.58      0.59      0.58        10
+weighted avg       0.64      0.60      0.61        10
 
-Accuracy (Top Decision Tree): 0.4904
-Macro-Average F1 (Top Decision Tree): 0.4944
-Weighted-Average F1 (Top Decision Tree): 0.4919
+Accuracy (Top Decision Tree): 0.6000
+Macro-Average F1 (Top Decision Tree): 0.5778
+Weighted-Average F1 (Top Decision Tree): 0.6133
 
 Best Hyperparameters (Top Decision Tree):
-{'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 2}
+{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 10}
+Precision (Top Decision Tree): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Top Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.6000
 ------------------------------------------------------
 ------------------------------------------------------
 (B)Confusion Matrix (Top Decision Tree):
-[[112  34 121]
- [ 42 167  60]
- [114  60 126]]
+[[1 1 0]
+ [0 2 1]
+ [2 0 3]]
 Classification Report (Top Decision Tree):
               precision    recall  f1-score   support
 
-      Type_F       0.42      0.42      0.42       267
-      Type_I       0.64      0.62      0.63       269
-      Type_M       0.41      0.42      0.42       300
+      Type_F       0.33      0.50      0.40         2
+      Type_I       0.67      0.67      0.67         3
+      Type_M       0.75      0.60      0.67         5
 
-    accuracy                           0.48       836
-   macro avg       0.49      0.49      0.49       836
-weighted avg       0.49      0.48      0.49       836
+    accuracy                           0.60        10
+   macro avg       0.58      0.59      0.58        10
+weighted avg       0.64      0.60      0.61        10
 
-Accuracy (Top Decision Tree): 0.4844
-Macro-Average F1 (Top Decision Tree): 0.4880
-Weighted-Average F1 (Top Decision Tree): 0.4855
+Accuracy (Top Decision Tree): 0.6000
+Macro-Average F1 (Top Decision Tree): 0.5778
+Weighted-Average F1 (Top Decision Tree): 0.6133
 
 Best Hyperparameters (Top Decision Tree):
-{'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 2}
+{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 10}
+Precision (Top Decision Tree): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Top Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.6667
+Class 2: 0.6000
 ------------------------------------------------------
 ------------------------------------------------------
 (C)Confusion Matrix (Multi-Layer Perceptron):
-[[267   0   0]
- [268   1   0]
- [300   0   0]]
+[[2 0 0]
+ [3 0 0]
+ [5 0 0]]
 Classification Report (Multi-Layer Perceptron):
               precision    recall  f1-score   support
 
-      Type_F       0.32      1.00      0.48       267
-      Type_I       1.00      0.00      0.01       269
-      Type_M       0.00      0.00      0.00       300
+      Type_F       0.20      1.00      0.33         2
+      Type_I       0.00      0.00      0.00         3
+      Type_M       0.00      0.00      0.00         5
 
-    accuracy                           0.32       836
-   macro avg       0.44      0.33      0.16       836
-weighted avg       0.42      0.32      0.16       836
+    accuracy                           0.20        10
+   macro avg       0.07      0.33      0.11        10
+weighted avg       0.04      0.20      0.07        10
 
-Accuracy (Multi-Layer Perceptron): 0.3206
-Macro-Average F1 (Multi-Layer Perceptron): 0.1640
-Weighted-Average F1 (Multi-Layer Perceptron): 0.1571
+Accuracy (Multi-Layer Perceptron): 0.2000
+Macro-Average F1 (Multi-Layer Perceptron): 0.1111
+Weighted-Average F1 (Multi-Layer Perceptron): 0.0667
+Precision (Multi-Layer Perceptron): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Multi-Layer Perceptron): 
 ------------------------------------------------------
 ------------------------------------------------------
 (C)Confusion Matrix (Multi-Layer Perceptron):
-[[267   0   0]
- [266   3   0]
- [299   1   0]]
+[[2 0 0]
+ [3 0 0]
+ [5 0 0]]
 Classification Report (Multi-Layer Perceptron):
               precision    recall  f1-score   support
 
-      Type_F       0.32      1.00      0.49       267
-      Type_I       0.75      0.01      0.02       269
-      Type_M       0.00      0.00      0.00       300
+      Type_F       0.20      1.00      0.33         2
+      Type_I       0.00      0.00      0.00         3
+      Type_M       0.00      0.00      0.00         5
 
-    accuracy                           0.32       836
-   macro avg       0.36      0.34      0.17       836
-weighted avg       0.34      0.32      0.16       836
+    accuracy                           0.20        10
+   macro avg       0.07      0.33      0.11        10
+weighted avg       0.04      0.20      0.07        10
 
-Accuracy (Multi-Layer Perceptron): 0.3230
-Macro-Average F1 (Multi-Layer Perceptron): 0.1693
-Weighted-Average F1 (Multi-Layer Perceptron): 0.1623
+Accuracy (Multi-Layer Perceptron): 0.2000
+Macro-Average F1 (Multi-Layer Perceptron): 0.1111
+Weighted-Average F1 (Multi-Layer Perceptron): 0.0667
+Precision (Multi-Layer Perceptron): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Multi-Layer Perceptron): 
 ------------------------------------------------------
 ------------------------------------------------------
 (C)Confusion Matrix (Multi-Layer Perceptron):
-[[267   0   0]
- [269   0   0]
- [300   0   0]]
+[[2 0 0]
+ [3 0 0]
+ [5 0 0]]
 Classification Report (Multi-Layer Perceptron):
               precision    recall  f1-score   support
 
-      Type_F       0.32      1.00      0.48       267
-      Type_I       0.00      0.00      0.00       269
-      Type_M       0.00      0.00      0.00       300
+      Type_F       0.20      1.00      0.33         2
+      Type_I       0.00      0.00      0.00         3
+      Type_M       0.00      0.00      0.00         5
 
-    accuracy                           0.32       836
-   macro avg       0.11      0.33      0.16       836
-weighted avg       0.10      0.32      0.15       836
+    accuracy                           0.20        10
+   macro avg       0.07      0.33      0.11        10
+weighted avg       0.04      0.20      0.07        10
 
-Accuracy (Multi-Layer Perceptron): 0.3194
-Macro-Average F1 (Multi-Layer Perceptron): 0.1614
-Weighted-Average F1 (Multi-Layer Perceptron): 0.1546
+Accuracy (Multi-Layer Perceptron): 0.2000
+Macro-Average F1 (Multi-Layer Perceptron): 0.1111
+Weighted-Average F1 (Multi-Layer Perceptron): 0.0667
+Precision (Multi-Layer Perceptron): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Multi-Layer Perceptron): 
 ------------------------------------------------------
 ------------------------------------------------------
 (C)Confusion Matrix (Multi-Layer Perceptron):
-[[267   0   0]
- [268   1   0]
- [300   0   0]]
+[[2 0 0]
+ [3 0 0]
+ [5 0 0]]
 Classification Report (Multi-Layer Perceptron):
               precision    recall  f1-score   support
 
-      Type_F       0.32      1.00      0.48       267
-      Type_I       1.00      0.00      0.01       269
-      Type_M       0.00      0.00      0.00       300
+      Type_F       0.20      1.00      0.33         2
+      Type_I       0.00      0.00      0.00         3
+      Type_M       0.00      0.00      0.00         5
 
-    accuracy                           0.32       836
-   macro avg       0.44      0.33      0.16       836
-weighted avg       0.42      0.32      0.16       836
+    accuracy                           0.20        10
+   macro avg       0.07      0.33      0.11        10
+weighted avg       0.04      0.20      0.07        10
 
-Accuracy (Multi-Layer Perceptron): 0.3206
-Macro-Average F1 (Multi-Layer Perceptron): 0.1640
-Weighted-Average F1 (Multi-Layer Perceptron): 0.1571
+Accuracy (Multi-Layer Perceptron): 0.2000
+Macro-Average F1 (Multi-Layer Perceptron): 0.1111
+Weighted-Average F1 (Multi-Layer Perceptron): 0.0667
+Precision (Multi-Layer Perceptron): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Multi-Layer Perceptron): 
 ------------------------------------------------------
 ------------------------------------------------------
 (C)Confusion Matrix (Multi-Layer Perceptron):
-[[267   0   0]
- [268   1   0]
- [300   0   0]]
+[[2 0 0]
+ [3 0 0]
+ [5 0 0]]
 Classification Report (Multi-Layer Perceptron):
               precision    recall  f1-score   support
 
-      Type_F       0.32      1.00      0.48       267
-      Type_I       1.00      0.00      0.01       269
-      Type_M       0.00      0.00      0.00       300
+      Type_F       0.20      1.00      0.33         2
+      Type_I       0.00      0.00      0.00         3
+      Type_M       0.00      0.00      0.00         5
 
-    accuracy                           0.32       836
-   macro avg       0.44      0.33      0.16       836
-weighted avg       0.42      0.32      0.16       836
+    accuracy                           0.20        10
+   macro avg       0.07      0.33      0.11        10
+weighted avg       0.04      0.20      0.07        10
 
-Accuracy (Multi-Layer Perceptron): 0.3206
-Macro-Average F1 (Multi-Layer Perceptron): 0.1640
-Weighted-Average F1 (Multi-Layer Perceptron): 0.1571
+Accuracy (Multi-Layer Perceptron): 0.2000
+Macro-Average F1 (Multi-Layer Perceptron): 0.1111
+Weighted-Average F1 (Multi-Layer Perceptron): 0.0667
+Precision (Multi-Layer Perceptron): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Multi-Layer Perceptron): 
 ------------------------------------------------------
 ------------------------------------------------------
 (D)Confusion Matrix (Top Multi-Layer Perceptron):
-[[180  24  63]
- [ 64 202   3]
- [168  43  89]]
+[[2 0 0]
+ [1 2 0]
+ [5 0 0]]
 Classification Report (Top Multi-Layer Perceptron):
               precision    recall  f1-score   support
 
-      Type_F       0.44      0.67      0.53       267
-      Type_I       0.75      0.75      0.75       269
-      Type_M       0.57      0.30      0.39       300
+      Type_F       0.25      1.00      0.40         2
+      Type_I       1.00      0.67      0.80         3
+      Type_M       0.00      0.00      0.00         5
 
-    accuracy                           0.56       836
-   macro avg       0.59      0.57      0.56       836
-weighted avg       0.59      0.56      0.55       836
+    accuracy                           0.40        10
+   macro avg       0.42      0.56      0.40        10
+weighted avg       0.35      0.40      0.32        10
 
-Accuracy (Top Multi-Layer Perceptron): 0.5634
-Macro-Average F1 (Top Multi-Layer Perceptron): 0.5574
-Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5513
-Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5513
+Accuracy (Top Multi-Layer Perceptron): 0.4000
+Macro-Average F1 (Top Multi-Layer Perceptron): 0.4000
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.3200
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.3200
 
 Best Hyperparameters (Top Multi-Layer Perceptron):
+Precision (Top Multi-Layer Perceptron): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Multi-Layer Perceptron): 
+{'activation': 'tanh', 'hidden_layer_sizes': (10, 10, 10), 'solver': 'adam'}
+------------------------------------------------------
+------------------------------------------------------
+(D)Confusion Matrix (Top Multi-Layer Perceptron):
+[[2 0 0]
+ [3 0 0]
+ [5 0 0]]
+Classification Report (Top Multi-Layer Perceptron):
+              precision    recall  f1-score   support
+
+      Type_F       0.20      1.00      0.33         2
+      Type_I       0.00      0.00      0.00         3
+      Type_M       0.00      0.00      0.00         5
+
+    accuracy                           0.20        10
+   macro avg       0.07      0.33      0.11        10
+weighted avg       0.04      0.20      0.07        10
+
+Accuracy (Top Multi-Layer Perceptron): 0.2000
+Macro-Average F1 (Top Multi-Layer Perceptron): 0.1111
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.0667
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.0667
+
+Best Hyperparameters (Top Multi-Layer Perceptron):
+Precision (Top Multi-Layer Perceptron): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Multi-Layer Perceptron): 
+{'activation': 'tanh', 'hidden_layer_sizes': (10, 10, 10), 'solver': 'adam'}
+------------------------------------------------------
+------------------------------------------------------
+(D)Confusion Matrix (Top Multi-Layer Perceptron):
+[[1 1 0]
+ [1 2 0]
+ [5 0 0]]
+Classification Report (Top Multi-Layer Perceptron):
+              precision    recall  f1-score   support
+
+      Type_F       0.14      0.50      0.22         2
+      Type_I       0.67      0.67      0.67         3
+      Type_M       0.00      0.00      0.00         5
+
+    accuracy                           0.30        10
+   macro avg       0.27      0.39      0.30        10
+weighted avg       0.23      0.30      0.24        10
+
+Accuracy (Top Multi-Layer Perceptron): 0.3000
+Macro-Average F1 (Top Multi-Layer Perceptron): 0.2963
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.2444
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.2444
+
+Best Hyperparameters (Top Multi-Layer Perceptron):
+Precision (Top Multi-Layer Perceptron): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Multi-Layer Perceptron): 
 {'activation': 'tanh', 'hidden_layer_sizes': (30, 50), 'solver': 'adam'}
 ------------------------------------------------------
 ------------------------------------------------------
 (D)Confusion Matrix (Top Multi-Layer Perceptron):
-[[226  19  22]
- [ 75 194   0]
- [219  45  36]]
+[[1 1 0]
+ [1 2 0]
+ [5 0 0]]
 Classification Report (Top Multi-Layer Perceptron):
               precision    recall  f1-score   support
 
-      Type_F       0.43      0.85      0.57       267
-      Type_I       0.75      0.72      0.74       269
-      Type_M       0.62      0.12      0.20       300
+      Type_F       0.14      0.50      0.22         2
+      Type_I       0.67      0.67      0.67         3
+      Type_M       0.00      0.00      0.00         5
 
-    accuracy                           0.55       836
-   macro avg       0.60      0.56      0.50       836
-weighted avg       0.60      0.55      0.49       836
+    accuracy                           0.30        10
+   macro avg       0.27      0.39      0.30        10
+weighted avg       0.23      0.30      0.24        10
 
-Accuracy (Top Multi-Layer Perceptron): 0.5455
-Macro-Average F1 (Top Multi-Layer Perceptron): 0.5039
-Weighted-Average F1 (Top Multi-Layer Perceptron): 0.4925
-Weighted-Average F1 (Top Multi-Layer Perceptron): 0.4925
+Accuracy (Top Multi-Layer Perceptron): 0.3000
+Macro-Average F1 (Top Multi-Layer Perceptron): 0.2963
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.2444
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.2444
 
 Best Hyperparameters (Top Multi-Layer Perceptron):
+Precision (Top Multi-Layer Perceptron): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Multi-Layer Perceptron): 
+{'activation': 'tanh', 'hidden_layer_sizes': (10, 10, 10), 'solver': 'adam'}
+------------------------------------------------------
+------------------------------------------------------
+(D)Confusion Matrix (Top Multi-Layer Perceptron):
+[[1 1 0]
+ [1 2 0]
+ [5 0 0]]
+Classification Report (Top Multi-Layer Perceptron):
+              precision    recall  f1-score   support
+
+      Type_F       0.14      0.50      0.22         2
+      Type_I       0.67      0.67      0.67         3
+      Type_M       0.00      0.00      0.00         5
+
+    accuracy                           0.30        10
+   macro avg       0.27      0.39      0.30        10
+weighted avg       0.23      0.30      0.24        10
+
+Accuracy (Top Multi-Layer Perceptron): 0.3000
+Macro-Average F1 (Top Multi-Layer Perceptron): 0.2963
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.2444
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.2444
+
+Best Hyperparameters (Top Multi-Layer Perceptron):
+Precision (Top Multi-Layer Perceptron): 
+Class 0: 0.3333
+Class 1: 0.6667
+Class 2: 0.7500
+Recall (Multi-Layer Perceptron): 
+{'activation': 'tanh', 'hidden_layer_sizes': (30, 50), 'solver': 'adam'}
+------------------------------------------------------
+Summary: 
+Average Accuracy: 0.4500, Variance: 0.0435
+ Average Macro-Average F1: 0.4071, Variance: 0.0512
+ Average Weighted-Average F1: 0.4006, Variance: 0.0710
+------------------------------------------------------
+This is for categories yourself for abalone
+------------------------------------------------------
+(A)Confusion Matrix (Decision Tree):
+[[2 0 0]
+ [1 5 0]
+ [0 0 2]]
+Classification Report (Decision Tree):
+              precision    recall  f1-score   support
+
+           2       0.67      1.00      0.80         2
+           1       1.00      0.83      0.91         6
+           0       1.00      1.00      1.00         2
+
+    accuracy                           0.90        10
+   macro avg       0.89      0.94      0.90        10
+weighted avg       0.93      0.90      0.91        10
+
+Accuracy (Decision Tree): 0.9000
+Macro-Average F1 (Decision Tree): 0.9030
+Weighted-Average F1 (Decision Tree): 0.9055
+Precision (Decision Tree): 
+Class 0: 0.6667
+Class 1: 1.0000
+Class 2: 1.0000
+Recall (Decision Tree):
+Class 0: 1.0000
+Class 1: 0.8333
+Class 2: 1.0000
+------------------------------------------------------
+This is for categories yourself for abalone
+------------------------------------------------------
+(A)Confusion Matrix (Decision Tree):
+[[2 0 0]
+ [1 5 0]
+ [0 0 2]]
+Classification Report (Decision Tree):
+              precision    recall  f1-score   support
+
+           2       0.67      1.00      0.80         2
+           1       1.00      0.83      0.91         6
+           0       1.00      1.00      1.00         2
+
+    accuracy                           0.90        10
+   macro avg       0.89      0.94      0.90        10
+weighted avg       0.93      0.90      0.91        10
+
+Accuracy (Decision Tree): 0.9000
+Macro-Average F1 (Decision Tree): 0.9030
+Weighted-Average F1 (Decision Tree): 0.9055
+Precision (Decision Tree): 
+Class 0: 0.6667
+Class 1: 1.0000
+Class 2: 1.0000
+Recall (Decision Tree):
+Class 0: 1.0000
+Class 1: 0.8333
+Class 2: 1.0000
+------------------------------------------------------
+This is for categories yourself for abalone
+------------------------------------------------------
+(A)Confusion Matrix (Decision Tree):
+[[2 0 0]
+ [1 5 0]
+ [0 0 2]]
+Classification Report (Decision Tree):
+              precision    recall  f1-score   support
+
+           2       0.67      1.00      0.80         2
+           1       1.00      0.83      0.91         6
+           0       1.00      1.00      1.00         2
+
+    accuracy                           0.90        10
+   macro avg       0.89      0.94      0.90        10
+weighted avg       0.93      0.90      0.91        10
+
+Accuracy (Decision Tree): 0.9000
+Macro-Average F1 (Decision Tree): 0.9030
+Weighted-Average F1 (Decision Tree): 0.9055
+Precision (Decision Tree): 
+Class 0: 0.6667
+Class 1: 1.0000
+Class 2: 1.0000
+Recall (Decision Tree):
+Class 0: 1.0000
+Class 1: 0.8333
+Class 2: 1.0000
+------------------------------------------------------
+This is for categories yourself for abalone
+------------------------------------------------------
+(A)Confusion Matrix (Decision Tree):
+[[1 0 1]
+ [1 5 0]
+ [0 0 2]]
+Classification Report (Decision Tree):
+              precision    recall  f1-score   support
+
+           2       0.50      0.50      0.50         2
+           1       1.00      0.83      0.91         6
+           0       0.67      1.00      0.80         2
+
+    accuracy                           0.80        10
+   macro avg       0.72      0.78      0.74        10
+weighted avg       0.83      0.80      0.81        10
+
+Accuracy (Decision Tree): 0.8000
+Macro-Average F1 (Decision Tree): 0.7364
+Weighted-Average F1 (Decision Tree): 0.8055
+Precision (Decision Tree): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.6667
+Recall (Decision Tree):
+Class 0: 0.5000
+Class 1: 0.8333
+Class 2: 1.0000
+------------------------------------------------------
+This is for categories yourself for abalone
+------------------------------------------------------
+(A)Confusion Matrix (Decision Tree):
+[[2 0 0]
+ [1 5 0]
+ [0 0 2]]
+Classification Report (Decision Tree):
+              precision    recall  f1-score   support
+
+           2       0.67      1.00      0.80         2
+           1       1.00      0.83      0.91         6
+           0       1.00      1.00      1.00         2
+
+    accuracy                           0.90        10
+   macro avg       0.89      0.94      0.90        10
+weighted avg       0.93      0.90      0.91        10
+
+Accuracy (Decision Tree): 0.9000
+Macro-Average F1 (Decision Tree): 0.9030
+Weighted-Average F1 (Decision Tree): 0.9055
+Precision (Decision Tree): 
+Class 0: 0.6667
+Class 1: 1.0000
+Class 2: 1.0000
+Recall (Decision Tree):
+Class 0: 1.0000
+Class 1: 0.8333
+Class 2: 1.0000
+------------------------------------------------------
+------------------------------------------------------
+(B)Confusion Matrix (Top Decision Tree):
+[[2 0 0]
+ [0 5 1]
+ [1 0 1]]
+Classification Report (Top Decision Tree):
+              precision    recall  f1-score   support
+
+           2       0.67      1.00      0.80         2
+           1       1.00      0.83      0.91         6
+           0       0.50      0.50      0.50         2
+
+    accuracy                           0.80        10
+   macro avg       0.72      0.78      0.74        10
+weighted avg       0.83      0.80      0.81        10
+
+Accuracy (Top Decision Tree): 0.8000
+Macro-Average F1 (Top Decision Tree): 0.7364
+Weighted-Average F1 (Top Decision Tree): 0.8055
+
+Best Hyperparameters (Top Decision Tree):
+{'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 2}
+Precision (Top Decision Tree): 
+Class 0: 0.6667
+Class 1: 1.0000
+Class 2: 0.5000
+Recall (Top Decision Tree): 
+Class 0: 1.0000
+Class 1: 0.8333
+Class 2: 0.5000
+------------------------------------------------------
+------------------------------------------------------
+(B)Confusion Matrix (Top Decision Tree):
+[[1 0 1]
+ [1 5 0]
+ [2 0 0]]
+Classification Report (Top Decision Tree):
+              precision    recall  f1-score   support
+
+           2       0.25      0.50      0.33         2
+           1       1.00      0.83      0.91         6
+           0       0.00      0.00      0.00         2
+
+    accuracy                           0.60        10
+   macro avg       0.42      0.44      0.41        10
+weighted avg       0.65      0.60      0.61        10
+
+Accuracy (Top Decision Tree): 0.6000
+Macro-Average F1 (Top Decision Tree): 0.4141
+Weighted-Average F1 (Top Decision Tree): 0.6121
+
+Best Hyperparameters (Top Decision Tree):
+{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5}
+Precision (Top Decision Tree): 
+Class 0: 0.2500
+Class 1: 1.0000
+Class 2: 0.0000
+Recall (Top Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.8333
+Class 2: 0.0000
+------------------------------------------------------
+------------------------------------------------------
+(B)Confusion Matrix (Top Decision Tree):
+[[1 0 1]
+ [1 5 0]
+ [2 0 0]]
+Classification Report (Top Decision Tree):
+              precision    recall  f1-score   support
+
+           2       0.25      0.50      0.33         2
+           1       1.00      0.83      0.91         6
+           0       0.00      0.00      0.00         2
+
+    accuracy                           0.60        10
+   macro avg       0.42      0.44      0.41        10
+weighted avg       0.65      0.60      0.61        10
+
+Accuracy (Top Decision Tree): 0.6000
+Macro-Average F1 (Top Decision Tree): 0.4141
+Weighted-Average F1 (Top Decision Tree): 0.6121
+
+Best Hyperparameters (Top Decision Tree):
+{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5}
+Precision (Top Decision Tree): 
+Class 0: 0.2500
+Class 1: 1.0000
+Class 2: 0.0000
+Recall (Top Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.8333
+Class 2: 0.0000
+------------------------------------------------------
+------------------------------------------------------
+(B)Confusion Matrix (Top Decision Tree):
+[[2 0 0]
+ [1 5 0]
+ [2 0 0]]
+Classification Report (Top Decision Tree):
+              precision    recall  f1-score   support
+
+           2       0.40      1.00      0.57         2
+           1       1.00      0.83      0.91         6
+           0       0.00      0.00      0.00         2
+
+    accuracy                           0.70        10
+   macro avg       0.47      0.61      0.49        10
+weighted avg       0.68      0.70      0.66        10
+
+Accuracy (Top Decision Tree): 0.7000
+Macro-Average F1 (Top Decision Tree): 0.4935
+Weighted-Average F1 (Top Decision Tree): 0.6597
+
+Best Hyperparameters (Top Decision Tree):
+{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5}
+Precision (Top Decision Tree): 
+Class 0: 0.4000
+Class 1: 1.0000
+Class 2: 0.0000
+Recall (Top Decision Tree): 
+Class 0: 1.0000
+Class 1: 0.8333
+Class 2: 0.0000
+------------------------------------------------------
+------------------------------------------------------
+(B)Confusion Matrix (Top Decision Tree):
+[[1 0 1]
+ [1 5 0]
+ [0 0 2]]
+Classification Report (Top Decision Tree):
+              precision    recall  f1-score   support
+
+           2       0.50      0.50      0.50         2
+           1       1.00      0.83      0.91         6
+           0       0.67      1.00      0.80         2
+
+    accuracy                           0.80        10
+   macro avg       0.72      0.78      0.74        10
+weighted avg       0.83      0.80      0.81        10
+
+Accuracy (Top Decision Tree): 0.8000
+Macro-Average F1 (Top Decision Tree): 0.7364
+Weighted-Average F1 (Top Decision Tree): 0.8055
+
+Best Hyperparameters (Top Decision Tree):
+{'criterion': 'gini', 'max_depth': 5, 'min_samples_split': 2}
+Precision (Top Decision Tree): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.6667
+Recall (Top Decision Tree): 
+Class 0: 0.5000
+Class 1: 0.8333
+Class 2: 1.0000
+------------------------------------------------------
+------------------------------------------------------
+(C)Confusion Matrix (Multi-Layer Perceptron):
+[[2 0 0]
+ [6 0 0]
+ [2 0 0]]
+Classification Report (Multi-Layer Perceptron):
+              precision    recall  f1-score   support
+
+           2       0.20      1.00      0.33         2
+           1       0.00      0.00      0.00         6
+           0       0.00      0.00      0.00         2
+
+    accuracy                           0.20        10
+   macro avg       0.07      0.33      0.11        10
+weighted avg       0.04      0.20      0.07        10
+
+Accuracy (Multi-Layer Perceptron): 0.2000
+Macro-Average F1 (Multi-Layer Perceptron): 0.1111
+Weighted-Average F1 (Multi-Layer Perceptron): 0.0667
+Precision (Multi-Layer Perceptron): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.6667
+Recall (Multi-Layer Perceptron): 
+------------------------------------------------------
+------------------------------------------------------
+(C)Confusion Matrix (Multi-Layer Perceptron):
+[[2 0 0]
+ [6 0 0]
+ [2 0 0]]
+Classification Report (Multi-Layer Perceptron):
+              precision    recall  f1-score   support
+
+           2       0.20      1.00      0.33         2
+           1       0.00      0.00      0.00         6
+           0       0.00      0.00      0.00         2
+
+    accuracy                           0.20        10
+   macro avg       0.07      0.33      0.11        10
+weighted avg       0.04      0.20      0.07        10
+
+Accuracy (Multi-Layer Perceptron): 0.2000
+Macro-Average F1 (Multi-Layer Perceptron): 0.1111
+Weighted-Average F1 (Multi-Layer Perceptron): 0.0667
+Precision (Multi-Layer Perceptron): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.6667
+Recall (Multi-Layer Perceptron): 
+------------------------------------------------------
+------------------------------------------------------
+(C)Confusion Matrix (Multi-Layer Perceptron):
+[[1 1 0]
+ [0 6 0]
+ [2 0 0]]
+Classification Report (Multi-Layer Perceptron):
+              precision    recall  f1-score   support
+
+           2       0.33      0.50      0.40         2
+           1       0.86      1.00      0.92         6
+           0       0.00      0.00      0.00         2
+
+    accuracy                           0.70        10
+   macro avg       0.40      0.50      0.44        10
+weighted avg       0.58      0.70      0.63        10
+
+Accuracy (Multi-Layer Perceptron): 0.7000
+Macro-Average F1 (Multi-Layer Perceptron): 0.4410
+Weighted-Average F1 (Multi-Layer Perceptron): 0.6338
+Precision (Multi-Layer Perceptron): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.6667
+Recall (Multi-Layer Perceptron): 
+------------------------------------------------------
+------------------------------------------------------
+(C)Confusion Matrix (Multi-Layer Perceptron):
+[[2 0 0]
+ [6 0 0]
+ [2 0 0]]
+Classification Report (Multi-Layer Perceptron):
+              precision    recall  f1-score   support
+
+           2       0.20      1.00      0.33         2
+           1       0.00      0.00      0.00         6
+           0       0.00      0.00      0.00         2
+
+    accuracy                           0.20        10
+   macro avg       0.07      0.33      0.11        10
+weighted avg       0.04      0.20      0.07        10
+
+Accuracy (Multi-Layer Perceptron): 0.2000
+Macro-Average F1 (Multi-Layer Perceptron): 0.1111
+Weighted-Average F1 (Multi-Layer Perceptron): 0.0667
+Precision (Multi-Layer Perceptron): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.6667
+Recall (Multi-Layer Perceptron): 
+------------------------------------------------------
+------------------------------------------------------
+(C)Confusion Matrix (Multi-Layer Perceptron):
+[[2 0 0]
+ [6 0 0]
+ [2 0 0]]
+Classification Report (Multi-Layer Perceptron):
+              precision    recall  f1-score   support
+
+           2       0.20      1.00      0.33         2
+           1       0.00      0.00      0.00         6
+           0       0.00      0.00      0.00         2
+
+    accuracy                           0.20        10
+   macro avg       0.07      0.33      0.11        10
+weighted avg       0.04      0.20      0.07        10
+
+Accuracy (Multi-Layer Perceptron): 0.2000
+Macro-Average F1 (Multi-Layer Perceptron): 0.1111
+Weighted-Average F1 (Multi-Layer Perceptron): 0.0667
+Precision (Multi-Layer Perceptron): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.6667
+Recall (Multi-Layer Perceptron): 
+------------------------------------------------------
+------------------------------------------------------
+(D)Confusion Matrix (Top Multi-Layer Perceptron):
+[[1 1 0]
+ [0 5 1]
+ [2 0 0]]
+Classification Report (Top Multi-Layer Perceptron):
+              precision    recall  f1-score   support
+
+           2       0.33      0.50      0.40         2
+           1       0.83      0.83      0.83         6
+           0       0.00      0.00      0.00         2
+
+    accuracy                           0.60        10
+   macro avg       0.39      0.44      0.41        10
+weighted avg       0.57      0.60      0.58        10
+
+Accuracy (Top Multi-Layer Perceptron): 0.6000
+Macro-Average F1 (Top Multi-Layer Perceptron): 0.4111
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5800
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5800
+
+Best Hyperparameters (Top Multi-Layer Perceptron):
+Precision (Top Multi-Layer Perceptron): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.6667
+Recall (Multi-Layer Perceptron): 
+{'activation': 'logistic', 'hidden_layer_sizes': (30, 50), 'solver': 'adam'}
+------------------------------------------------------
+------------------------------------------------------
+(D)Confusion Matrix (Top Multi-Layer Perceptron):
+[[1 1 0]
+ [0 5 1]
+ [2 0 0]]
+Classification Report (Top Multi-Layer Perceptron):
+              precision    recall  f1-score   support
+
+           2       0.33      0.50      0.40         2
+           1       0.83      0.83      0.83         6
+           0       0.00      0.00      0.00         2
+
+    accuracy                           0.60        10
+   macro avg       0.39      0.44      0.41        10
+weighted avg       0.57      0.60      0.58        10
+
+Accuracy (Top Multi-Layer Perceptron): 0.6000
+Macro-Average F1 (Top Multi-Layer Perceptron): 0.4111
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5800
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5800
+
+Best Hyperparameters (Top Multi-Layer Perceptron):
+Precision (Top Multi-Layer Perceptron): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.6667
+Recall (Multi-Layer Perceptron): 
 {'activation': 'relu', 'hidden_layer_sizes': (10, 10, 10), 'solver': 'adam'}
 ------------------------------------------------------
 ------------------------------------------------------
 (D)Confusion Matrix (Top Multi-Layer Perceptron):
-[[216  14  37]
- [ 95 174   0]
- [218  28  54]]
+[[2 0 0]
+ [2 0 4]
+ [2 0 0]]
 Classification Report (Top Multi-Layer Perceptron):
               precision    recall  f1-score   support
 
-      Type_F       0.41      0.81      0.54       267
-      Type_I       0.81      0.65      0.72       269
-      Type_M       0.59      0.18      0.28       300
+           2       0.33      1.00      0.50         2
+           1       0.00      0.00      0.00         6
+           0       0.00      0.00      0.00         2
 
-    accuracy                           0.53       836
-   macro avg       0.60      0.55      0.51       836
-weighted avg       0.60      0.53      0.50       836
+    accuracy                           0.20        10
+   macro avg       0.11      0.33      0.17        10
+weighted avg       0.07      0.20      0.10        10
 
-Accuracy (Top Multi-Layer Perceptron): 0.5311
-Macro-Average F1 (Top Multi-Layer Perceptron): 0.5122
-Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5033
-Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5033
+Accuracy (Top Multi-Layer Perceptron): 0.2000
+Macro-Average F1 (Top Multi-Layer Perceptron): 0.1667
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.1000
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.1000
 
 Best Hyperparameters (Top Multi-Layer Perceptron):
-{'activation': 'tanh', 'hidden_layer_sizes': (30, 50), 'solver': 'adam'}
+Precision (Top Multi-Layer Perceptron): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.6667
+Recall (Multi-Layer Perceptron): 
+{'activation': 'relu', 'hidden_layer_sizes': (30, 50), 'solver': 'adam'}
 ------------------------------------------------------
 ------------------------------------------------------
 (D)Confusion Matrix (Top Multi-Layer Perceptron):
-[[193  15  59]
- [ 83 184   2]
- [210  30  60]]
+[[1 1 0]
+ [0 5 1]
+ [2 0 0]]
 Classification Report (Top Multi-Layer Perceptron):
               precision    recall  f1-score   support
 
-      Type_F       0.40      0.72      0.51       267
-      Type_I       0.80      0.68      0.74       269
-      Type_M       0.50      0.20      0.29       300
+           2       0.33      0.50      0.40         2
+           1       0.83      0.83      0.83         6
+           0       0.00      0.00      0.00         2
 
-    accuracy                           0.52       836
-   macro avg       0.57      0.54      0.51       836
-weighted avg       0.56      0.52      0.50       836
+    accuracy                           0.60        10
+   macro avg       0.39      0.44      0.41        10
+weighted avg       0.57      0.60      0.58        10
 
-Accuracy (Top Multi-Layer Perceptron): 0.5227
-Macro-Average F1 (Top Multi-Layer Perceptron): 0.5122
-Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5038
-Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5038
+Accuracy (Top Multi-Layer Perceptron): 0.6000
+Macro-Average F1 (Top Multi-Layer Perceptron): 0.4111
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5800
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5800
 
 Best Hyperparameters (Top Multi-Layer Perceptron):
-{'activation': 'tanh', 'hidden_layer_sizes': (30, 50), 'solver': 'adam'}
+Precision (Top Multi-Layer Perceptron): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.6667
+Recall (Multi-Layer Perceptron): 
+{'activation': 'logistic', 'hidden_layer_sizes': (30, 50), 'solver': 'adam'}
 ------------------------------------------------------
 ------------------------------------------------------
 (D)Confusion Matrix (Top Multi-Layer Perceptron):
-[[228  15  24]
- [ 85 184   0]
- [236  30  34]]
+[[1 1 0]
+ [0 5 1]
+ [2 0 0]]
 Classification Report (Top Multi-Layer Perceptron):
               precision    recall  f1-score   support
 
-      Type_F       0.42      0.85      0.56       267
-      Type_I       0.80      0.68      0.74       269
-      Type_M       0.59      0.11      0.19       300
+           2       0.33      0.50      0.40         2
+           1       0.83      0.83      0.83         6
+           0       0.00      0.00      0.00         2
 
-    accuracy                           0.53       836
-   macro avg       0.60      0.55      0.50       836
-weighted avg       0.60      0.53      0.48       836
+    accuracy                           0.60        10
+   macro avg       0.39      0.44      0.41        10
+weighted avg       0.57      0.60      0.58        10
 
-Accuracy (Top Multi-Layer Perceptron): 0.5335
-Macro-Average F1 (Top Multi-Layer Perceptron): 0.4959
-Weighted-Average F1 (Top Multi-Layer Perceptron): 0.4844
-Weighted-Average F1 (Top Multi-Layer Perceptron): 0.4844
+Accuracy (Top Multi-Layer Perceptron): 0.6000
+Macro-Average F1 (Top Multi-Layer Perceptron): 0.4111
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5800
+Weighted-Average F1 (Top Multi-Layer Perceptron): 0.5800
 
 Best Hyperparameters (Top Multi-Layer Perceptron):
-{'activation': 'tanh', 'hidden_layer_sizes': (30, 50), 'solver': 'adam'}
+Precision (Top Multi-Layer Perceptron): 
+Class 0: 0.5000
+Class 1: 1.0000
+Class 2: 0.6667
+Recall (Multi-Layer Perceptron): 
+{'activation': 'logistic', 'hidden_layer_sizes': (30, 50), 'solver': 'adam'}
 ------------------------------------------------------
 Summary: 
-Average Accuracy: nan, Variance: nan
- Average Macro-Average F1: nan, Variance: nan
- Average Weighted-Average F1: nan, Variance: nan
+Average Accuracy: 0.6000, Variance: 0.0650
+ Average Macro-Average F1: 0.4920, Variance: 0.0791
+ Average Weighted-Average F1: 0.5621, Variance: 0.0933
 ------------------------------------------------------
